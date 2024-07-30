@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"/>    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .toast {
+            width: 250px;
+            padding: 15px;
+            background-color: rgb(212, 209, 209);
+            border-radius: 10px;
+        }
+
+        .ret {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+        }
+
+        .ret-text {
+            display: flex;
+            align-items: center;
+        }
+
+        .toast-body {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- html,css pure 
+    <div class="toast">
+        <div class="toast-body">
+            <div class="ret-text">
+                <div class="ret"></div>
+                <h2>Toast</h2>
+            </div>
+            <span>11 min ago</span>
+        </div>
+        <hr>
+        <p>Your kind support keeps open-source tools like this free for others.</p>
+    </div>
+    -->
+    <!-- Tailwind-CSS -->
+
+    <div class="w-80 bg-slate-100 rounded-lg divide-y">
+        <div class="flex items-center justify-between p-2">
+            <div class="flex items-center">
+                <div class="w-4 h-4 bg-red-300 rounded-md mr-2"></div>
+                <h2 class="text-xl">Toast</h2>
+            </div>
+            <span>11 mins ago</span>
+        </div>
+        <p class="mt-2 p-2">Your kind support keeps open-source tools like this free for others.</p>
+    </div>
+</body>
+</html>
